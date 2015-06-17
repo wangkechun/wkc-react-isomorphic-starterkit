@@ -64,6 +64,8 @@ server.ext("onPreResponse", (request, reply) => {
 						<meta charset="utf-8">
 						<title>react-isomorphic-starterkit</title>
 						<link rel="shortcut icon" href="/favicon.ico">
+						<link href="http://localhost:8000/bootstrap.min.css" rel="stylesheet">
+						
 					</head>
 					<body>
 						<div id="react-root">${reactString}</div>
