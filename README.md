@@ -1,20 +1,5 @@
-![screenshot](https://i.imgur.com/4EaXKi8.png?1)
 
 # React Isomorphic Starterkit
-
-Isomorphic starterkit with server-side React rendering using 
-[npm](https://www.npmjs.com/), 
-[piping](https://github.com/mdlawson/piping), 
-[webpack](https://webpack.github.io/), 
-[webpack-dev-server](https://github.com/webpack/webpack-dev-server),
-[hapi.js](http://www.hapijs.com/), 
-[babel.js](http://babeljs.io/), 
-[react.js](https://facebook.github.io/react), 
-[react-router](https://github.com/rackt/react-router), 
-[react-hot-loader](https://gaearon.github.io/react-hot-loader), 
-[react-transmit](https://github.com/RickWong/react-transmit),
-[react-inline-css](https://github.com/RickWong/react-inline-css),
-[react-a11y](https://github.com/rackt/react-a11y)
 
 ## Features
 
