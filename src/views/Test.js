@@ -104,33 +104,37 @@ var App4 = React.createClass({
 });
 
 
-var App = React.createClass({
-    componentDidMount(){
-        var sel = document.querySelector.bind(document)
-        var sela = document.querySelectorAll.bind(document)
-        var canvas = sel('#canvas')
-        var ctx = canvas.getContext('2d')
-        ctx.fillStyle = '#eeeeef'
-                
-    },
-    render: ()=> {
+var BrowseHappy = React.createClass({
+    render:()=>{
         return (
-            <div className="row">
-                <canvas id="canvas" width="900px" height="600px"></canvas>
+            <div>
+                <p className="browsehappy">
+                <img src="http://meiqia-s.b0.upaiyun.com/appsite_static/img_IE/icon_scream_cat.png"/>
+                喵喵喵，你的网页浏览器已经<strong>过辅导费期啦</strong> ！ 请
+                <a href="http://browsehappy.com/">狗肉馆升级你的浏览器</a>
+                以改进网页浏览体验吧。
+                </p>
             </div>
-        )
+            )
     }
-});
+})
+
+var Header = React.createClass({
+    render:()=>{
+        return (
+            <div>
+                
+            </div>
+            )
+    }
+})
 
 class Main extends React.Component {
     render() {
         return (
             <div>
-                <Nav/>
-
-                <div className="container">
-                    <App/>
-                </div>
+                <BrowseHappy/>
+                <Header/>
             </div>
         )
     }
