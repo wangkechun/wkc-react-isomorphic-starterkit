@@ -24,7 +24,8 @@ config.module = {
 		{include: /\.json$/, loaders: ["json-loader"]},
 		{include: /\.js$/, loaders: ["react-hot", "babel-loader?stage=0&optional=runtime&plugins=typecheck"], exclude: /node_modules/},
 		{include: /\.css$/, loaders: ["style-loader","css-loader"]},
-		{include: /\.less$/, loaders: ["style-loader","css-loader","autoprefixer-loader","less-loader"]}
+		{include: /\.less$/, loaders: ["style-loader","css-loader","autoprefixer-loader","less-loader"]},
+		{include: /\.jade$/, loaders: ["react-jade-loader?split=true"]}
 	]
 };
 

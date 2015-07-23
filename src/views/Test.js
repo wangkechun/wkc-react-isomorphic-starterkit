@@ -3,14 +3,12 @@ import React from "react";
 import InlineCss from "react-inline-css";
 import Transmit from "react-transmit";
 import co from "co";
-// require("./Test1.less")
+var Jade;
 if(__CLIENT__){
     require("./Test.less");
+    Jade = require('./Test.jade')
 }
 
-/**
- * Main React application entry-point for both the server and client.
- */
 
 var Nav = React.createClass({
     render: ()=> {
@@ -104,37 +102,17 @@ var App4 = React.createClass({
 });
 
 
-var BrowseHappy = React.createClass({
-    render:()=>{
-        return (
-            <div>
-                <p className="browsehappy">
-                <img src="http://meiqia-s.b0.upaiyun.com/appsite_static/img_IE/icon_scream_cat.png"/>
-                喵喵喵，你的网页浏览器已经<strong>过辅导费期啦</strong> ！ 请
-                <a href="http://browsehappy.com/">狗肉馆升级你的浏览器</a>
-                以改进网页浏览体验吧。
-                </p>
-            </div>
-            )
-    }
-})
+//http://meiqia.com/
 
-var Header = React.createClass({
-    render:()=>{
-        return (
-            <div>
-                
-            </div>
-            )
-    }
-})
 
 class Main extends React.Component {
     render() {
+        if(__SERVER__){
+            return <div/>
+        }
         return (
             <div>
-                <BrowseHappy/>
-                <Header/>
+                {Jade.BrowseHappy()}
             </div>
         )
     }

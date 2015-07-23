@@ -25,7 +25,8 @@ module.exports = {
 			{include: /\.json$/, loaders: ["json-loader"]},
 			{include: /\.js$/, loaders: ["babel-loader?stage=0&optional=runtime&plugins=typecheck"], exclude: /node_modules/},
 			{include: /\.css$/, loaders: ["style-loader","css-loader"]},
-			{include: /\.less$/, loaders: ["style-loader","css-loader","autoprefixer-loader","less-loader"]}
+			{include: /\.less$/, loaders: ["style-loader","css-loader","autoprefixer-loader","less-loader"]},
+			{include: /\.jade$/, loaders: ["react-jade-loader?split=true"]}
 		]
 	},
 	resolve: {
@@ -34,7 +35,7 @@ module.exports = {
 			"node_modules",
 			"web_modules"
 		],
-		extensions: ["", ".json", ".js",".less",".css"]
+		extensions: ["", ".json", ".js",".less",".css","jade"]
 	},
 	node:    {
 		__dirname: true,
