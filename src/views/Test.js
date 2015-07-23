@@ -113,6 +113,7 @@ class Main extends React.Component {
         return (
             <div>
                 {Jade.BrowseHappy()}
+                {Jade.Header()}
             </div>
         )
     }

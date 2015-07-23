@@ -5,6 +5,9 @@ body{
 a{
   color:#00A797;
   text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
 }
 .browsehappy{
   text-align: center;
@@ -14,3 +17,49 @@ a{
   color:#000;
 
 }
+
+.header{
+  margin-top: 20px;
+  width: 100%;
+  * {
+    // border: red 1px solid;
+  }
+  .inr{
+    max-width: 1100px;
+    margin:0 auto;
+    height: 48px;
+    position: relative;
+    > a{
+      display: inline-block;
+      background: url("//meiqia-s.b0.upaiyun.com/appsite_static/logo.png") no-repeat 50% 0;
+      background-size: 120px 48px;
+      width: 120px;
+      height: 48px;
+      border:0;
+      color:transparent;
+    }
+    nav{
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      >a{
+        margin:0 15px;
+        line-height: 48px;
+        font-size: 18px;
+        display: inline-block;
+        vertical-align: top;
+        zoom: 1;
+      }
+      a.sign{
+        background-color: #00BFAF;
+        padding: 0 25px;
+        margin: 5px 0 5px 15px;
+        color:#fff;
+        opacity: 0.8;
+        border-radius: 4px;
+        line-height: 38px;
+        vertical-align: top;
+      }
+    }
+  }
+} 
