@@ -115,7 +115,7 @@ class Main extends React.Component {
                 {Jade.BrowseHappy()}
                 {Jade.Header()}
                 {Jade.Balloon()}
-                {Jade.SectionHighLight()}
+                {Jade.Section()}
             </div>
         )
     }
