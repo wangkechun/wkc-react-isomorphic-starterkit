@@ -23,7 +23,9 @@ module.exports = {
 	module:  {
 		loaders: [
 			{include: /\.json$/, loaders: ["json-loader"]},
-			{include: /\.js$/, loaders: ["babel-loader?stage=0&optional=runtime&plugins=typecheck"], exclude: /node_modules/}
+			{include: /\.js$/, loaders: ["babel-loader?stage=0&optional=runtime&plugins=typecheck"], exclude: /node_modules/},
+			{include: /\.css$/, loaders: ["style-loader","css-loader"]},
+			{include: /\.less$/, loaders: ["style-loader","css-loader","autoprefixer-loader","less-loader"]}
 		]
 	},
 	resolve: {
@@ -32,7 +34,7 @@ module.exports = {
 			"node_modules",
 			"web_modules"
 		],
-		extensions: ["", ".json", ".js"]
+		extensions: ["", ".json", ".js",".less",".css"]
 	},
 	node:    {
 		__dirname: true,
