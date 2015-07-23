@@ -19,6 +19,15 @@ config.plugins = [
 	new webpack.HotModuleReplacementPlugin(),
 	new webpack.NoErrorsPlugin()
 ];
+config.module = {
+	loaders: [
+		{include: /\.json$/, loaders: ["json-loader"]},
+		{include: /\.js$/, loaders: ["react-hot", "babel-loader?stage=0&optional=runtime&plugins=typecheck"], exclude: /node_modules/},
+		{include: /\.css$/, loaders: ["style-loader","css-loader"]},
+		{include: /\.less$/, loaders: ["style-loader","css-loader","autoprefixer-loader","less-loader"]}
+	]
+};
+
 
 config.devServer = {
 	publicPath:  "http://localhost:8080/dist/",
