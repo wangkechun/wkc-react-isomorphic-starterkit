@@ -1,148 +1,66 @@
-body{
-  font-size: 16px;
-  line-height: 1.5;
-}
-a{
-  color:#00A797;
-  text-decoration: none;
-  &:hover{
-    text-decoration: none;
-  }
-}
-.browsehappy{
-  text-align: center;
-  margin:0;
-  background-color: #f1f1f1;
-  padding: 10px 0;
-  color:#000;
-
+* {
+  transition: all 0.5s;
 }
 
 .header{
-  margin-top: 20px;
-  width: 100%;
-  * {
-    // border: red 1px solid;
-  }
-  .inr{
-    max-width: 1100px;
-    margin:0 auto;
-    height: 48px;
-    position: relative;
-    > a{
-      display: inline-block;
-      background: url("//meiqia-s.b0.upaiyun.com/appsite_static/logo.png") no-repeat 50% 0;
-      background-size: 120px 48px;
-      width: 120px;
-      height: 48px;
-      border:0;
-      color:transparent;
-    }
-    nav{
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      >a{
-        margin:0 15px;
-        line-height: 48px;
-        font-size: 18px;
-        display: inline-block;
-        vertical-align: top;
-        zoom: 1;
-      }
-      a.sign{
-        background-color: #00BFAF;
-        padding: 0 25px;
-        margin: 5px 0 5px 15px;
-        color:#fff;
-        opacity: 0.8;
-        border-radius: 4px;
-        line-height: 38px;
-        vertical-align: top;
-      }
-    }
-  }
-}
-
-.balloon{
   position: fixed;
-  top:26%;
-  left: 0;
-  >a{
-    color:#00A797;
-    img{
-      width: 160px;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #ededed;
+  background: #fff;
+  opacity: .97;
+  padding-left: 100px;
+  padding-right: 100px;
+  line-height: 50px;
+  >*{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+  }
+  .icon{
+    background-image: url(https://dn-st.b0.upaiyun.com/site/v0.5.0/images/global/logo@2x.png);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 150px;
+    overflow-y: visible;
+    background-size: 150px 20px;
+    background-position-y: 14px;
+  }
+  ul.menu{
+    text-transform: capitalize;
+    height: 50px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    width: 60%;
+    li{
+      display: inline-block;
+      height: 50px;
+      margin-left: 35px;
+      &.active{
+        color: #03a9f4;
+      }
     }
   }
-  >img{
-    position: absolute;
-    top:30px;
-    right: -12px;
-    width: 24px;
-    cursor: pointer;
+  .right{
+    float: right;
   }
-}
-
-.section{
-  max-width: 1000px;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  padding-top: 100px;
-}
-.section-high-light{
-  h1{
-    line-height: 1em;
-    margin: 0;
-    font-size: 40px;
-    font-weight: 100;
-  }
-  h2{
-    max-width: 28em;
-    font-size: 18px;
-    color:#8E704C;
-    margin: 0 auto;
-    font-weight: bold;
-    margin-top: 0.83em;
-  }
-}
-
-
-.section-signup{
-  h3{
-    font-size: 20px;
-    font-weight: bold;
-  }
-  input.mail{
-    width: 300px;
-    padding:8px;
-    border:1px solid #aaa;
-    transition:0.3s;
-    font-size: 18px;
-    border-radius: 4px;
-  }
-  input.sign{
+  .login, .sign-up {
     margin-left: 10px;
-    border: 0;
-    height: 45px;
-    width: 100px;
-    color: #fff;
-    opacity: 0.8;
-    background-color: #00BFAF;
-    border-radius: 4px;
+    display: inline-block;
+    .btn{
+      text-transform: capitalize;
+      color:#4d4d4d;
+      border: #c2c2c2 solid 1px;
+      border-radius: 2px
+    }
+  }
+  .sign-up .btn{
+    background-color:rgb(3, 169, 244);
+    color: white;
   }
 }
 
 
 
-
-
-
-
-.section.section-video{
-  a{
- }
-  video{
-    box-shadow: 0 1px 50px rgba(0,0,0,0.4);
-  }
-}
