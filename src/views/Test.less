@@ -1,7 +1,9 @@
 * {
   transition: all 0.5s;
 }
-
+*{
+  /*border: 1px solid rgb(231, 231, 231);*/
+}
 a:active, a:hover {
   outline: 0;
   text-decoration: none;
@@ -59,9 +61,7 @@ a:active, a:hover {
     margin-bottom: 0;
   }
   .actions{
-    *{
-      /*border: 1px solid red;*/
-    }
+    
     .row>*{
       padding-left: 2px;
       padding-right: 2px;
@@ -110,6 +110,28 @@ a:active, a:hover {
       background-image: url(https://dn-st.b0.upaiyun.com/site/v0.4.x/images/index/action-research@2x.png);
       background-size: 77px 80px;
       background-position: center 30px;
+    }
+  }
+  .features{
+    h1{
+      margin-bottom: 50px;
+      margin-top: 70px;
+    }
+    .row>*{
+      margin-bottom: 68px;
+    }
+    .feature-icon{
+      background-image: url(https://dn-st.b0.upaiyun.com/site/v0.4.x/images/index/feature-icon@2x.png);
+      width: 44px;
+      height: 44px;
+      margin: 0 auto 20px;
+      background-size: 352px 44px;
+    }
+    span{
+      display: inline-block;
+      height: 40px;
+      color: gray;
+      max-width: 160px;
     }
   }
 }
