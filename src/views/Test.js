@@ -45,6 +45,7 @@ class Main extends React.Component {
         }
         return (
             <div>
+            <Nav/>
                 {Jade.header()}
             </div>
         )
